@@ -1,5 +1,12 @@
 #include <iostream>
 
+/**
+ * Implement an algorithm to print all valid (e.g., properly opened and closed)
+ * combinations of n-pairs of parentheses.
+ * EXAMPLE:
+ * input: 3 (e.g., 3 pairs of parentheses)
+ * output: ()()(), ()(()), (())(), ((()))
+ */
 
 void printParatheses(unsigned num, std::string *existing = NULL) {
   std::string *temp;
