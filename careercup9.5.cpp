@@ -12,7 +12,7 @@
 #include <iostream>
 #include <string>
 
-int find(std::string &s, std::string array[], unsigned size) {  
+int find(const std::string &s, std::string array[], unsigned size) {
   unsigned left = 0;
   unsigned right = size;
   
@@ -43,13 +43,11 @@ int main(void) {
   std::string example2[] = {"at", "", "", "", "", "ball", "car", "", "",
     "dad", "", ""};
   
-  std::string temp("ball");
   std::cout << "result of finding \"ball\" in example 1: " <<
-  find(temp, example1, 13) << std::endl;
+  find("ball", example1, 13) << std::endl;
   
-  temp = "ballcar";
   std::cout << "result of finding \"ballcar\" in example 2: " <<
-  find(temp, example2, 12) << std::endl;
+  find("ballcar", example2, 12) << std::endl;
   
   return 0;
 }
